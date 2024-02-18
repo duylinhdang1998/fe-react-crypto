@@ -1,14 +1,11 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   corePlugins: {
     preflight: false,
   },
-  darkMode: 'class', // or 'media' or 'class'
-  mode: "jit",
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./common/**/*.{js,ts,jsx,tsx}",
-    "./modules/**/*.{js,ts,jsx,tsx}",
-  ],
+  important: true,
+  darkMode: "class", // or 'media' or 'class'
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       xs: "480px",
@@ -31,7 +28,7 @@ module.exports = {
           dark: "var(--color-accent-dark)",
         },
         bgCoreTeam: "#F8F8F8",
-        "primary": "#164A41",
+        primary: "#164A41",
         "second-primary": "#45A454",
       },
       fontFamily: {
@@ -41,13 +38,12 @@ module.exports = {
         cabinet: ["Cabinet Grotesk", "sans-serif"],
       },
       fontSize: {
-        "16px":"16px",
+        "16px": "16px",
         "40px": "40px",
         "20px": "20px",
         "64px": "64px",
         "24px": "24px",
-        "30px": "30px"
-        
+        "30px": "30px",
       },
       lineHeight: {
         14: "14px",
@@ -134,8 +130,8 @@ module.exports = {
         60: "60px",
       },
 
-     width: {
-      "108px": "108px",
+      width: {
+        "108px": "108px",
       },
       minHeight: {
         none: "none",
@@ -263,8 +259,8 @@ module.exports = {
         around: "0px 8px 48px rgba(0, 0, 0, 0.12)",
       },
       backgroundImage: {
-        "footer": "url('/images/bg-footer.png')",
-        "profile": "url('/images/banner-profile.png')",
+        footer: "url('/images/bg-footer.png')",
+        profile: "url('/images/banner-profile.png')",
         "blue-conic":
           "conic-gradient(from 180deg at 50% 50%, #0088CC 0deg, #1751E7 108.75deg, #4A75E6 223.13deg, #3C9BE0 320.63deg, #0088CC 360deg)",
         "dark-conic":
@@ -277,25 +273,11 @@ module.exports = {
       },
       padding: {
         "1px": "1px",
-
       },
       margin: {
-        200: "200px"
+        200: "200px",
       },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio", '@tailwindcss/forms' )],
-  variants: {
-    // ...
-    scrollbar: ["dark"],
-    pointerEvents: ["disabled"],
-    cursor: ["disabled"],
-    opacity: ["disabled"],
-    fill: ["hover", "focus"],
-    backgroundColor: ["checked"],
-    borderColor: ["checked"],
-    textColor: ["checked"],
-    scale: ["active", "group-hover"],
-    opacity: ["disabled"],
-  },
+  plugins: [require("@tailwindcss/aspect-ratio", "@tailwindcss/forms")],
 };

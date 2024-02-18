@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter Variable", sans-serif;
+  margin: 0 !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.ant-form-item .ant-form-item-label > label::after {
+  display: none;
+}
+.ant-form-item-explain {
+  display: none;
+}
+.ant-input-number-input-wrap,
+.ant-input-number-input {
+  height: 100%;
+}
+
+.ant-btn:focus-visible {
+  background-color: transparent !important;
+}
+
+.ant-checkbox .ant-checkbox-inner {
+  border-radius: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.ant-modal-footer {
+  /* @apply !pt-4 border-0 border-t border-solid !border-neutral-07 !px-6; */
+}
+
+.ant-select-single .ant-select-selector {
+  border-radius: inherit !important;
+}

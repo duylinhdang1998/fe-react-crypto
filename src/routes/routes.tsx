@@ -2,7 +2,6 @@ import { Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "~/layout/Layout";
 import PageNotFound from "~/pages/PageNotFound/PageNotFound";
-import { ROUTE_PATH } from "./route.constants";
 import Dashboard from "~/pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([

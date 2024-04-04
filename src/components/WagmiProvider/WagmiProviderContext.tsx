@@ -1,10 +1,10 @@
 import { WagmiProvider } from "wagmi";
-import { arbitrum, avalanche, bsc, fantom, gnosis, mainnet, optimism, polygon } from "wagmi/chains";
+import { arbitrum } from "wagmi/chains";
 import { environment } from "~/utils/env";
 import { createWeb3Modal } from "@web3modal/wagmi/react";
 import { defaultWagmiConfig } from "@web3modal/wagmi/react/config";
 
-const chains = [mainnet, polygon, avalanche, arbitrum, bsc, optimism, gnosis, fantom] as const;
+const chains = [arbitrum] as const;
 
 const projectId = environment.PROJECT_ID;
 
